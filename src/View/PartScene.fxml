@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="469.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PartSceneController">
+   <children>
+      <Button layoutX="246.0" layoutY="384.0" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Button layoutX="331.0" layoutY="384.0" mnemonicParsing="false" onAction="#toMainScene" text="Cancel" />
+      <Label layoutX="28.0" layoutY="46.0" prefHeight="17.0" prefWidth="74.0" text="Add Part" />
+      <TextField editable="false" layoutX="85.0" layoutY="106.0" promptText="Auto Gen - Disabled">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="name" layoutX="85.0" layoutY="136.0" />
+      <TextField fx:id="inv" layoutX="85.0" layoutY="166.0" />
+      <TextField fx:id="price" layoutX="85.0" layoutY="196.0" />
+      <TextField fx:id="max" layoutX="85.0" layoutY="226.0" />
+      <TextField fx:id="MachineId" layoutX="85.0" layoutY="256.0" />
+      <TextField fx:id="min" layoutX="331.0" layoutY="256.0" />
+      <RadioButton layoutX="223.0" layoutY="54.0" mnemonicParsing="false" selected="true" text="In-House" />
+      <RadioButton layoutX="342.0" layoutY="54.0" mnemonicParsing="false" onAction="#toOutsourcedPartScene" text="Outsourced" />
+      <Label layoutX="13.0" layoutY="106.0" text="ID" />
+      <Label layoutX="13.0" layoutY="136.0" text="Name" />
+      <Label layoutX="13.0" layoutY="166.0" text="Inv" />
+      <Label layoutX="13.0" layoutY="196.0" text="Price/Cost" />
+      <Label layoutX="13.0" layoutY="226.0" text="Max" />
+      <Label layoutX="13.0" layoutY="256.0" text="Machine ID" />
+      <Label layoutX="287.0" layoutY="261.0" text="Min" />
+   </children>
+</AnchorPane>
